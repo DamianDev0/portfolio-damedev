@@ -178,7 +178,7 @@ export const projects = [
       ],
       image: vortextream,
       linkGithub: "https://github.com/agogo345/vortexStream-Backend-Nestjs.git",
-      deploy_url: 'https://vortextream.netlify.app/'
+      deploy_url: 'https://vortextreaming.netlify.app/'
     },
     {
       id: 2,
