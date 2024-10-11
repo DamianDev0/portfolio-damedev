@@ -1,7 +1,7 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 interface ButtonSkillsProps {
-  icon: string
+  icon: StaticImageData
 }
 
 export const ButtonSkills = ({ icon }: ButtonSkillsProps) => {

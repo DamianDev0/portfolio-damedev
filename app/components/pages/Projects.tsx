@@ -1,5 +1,21 @@
+import { StaticImageData } from "next/image";
 import { projects } from "../../constants/data";
 import { CardProject } from "../ui/card-project";
+
+
+interface Project {
+  id: number;
+  image: StaticImageData;
+  name: string;
+  description: string;
+  linkGithub: string;
+  deploy_url: string;
+  tags: { name: string }[];
+}
+
+interface Tags {
+  name: string;
+}
 
 export const ProjectsComponent = () => {
   return (
@@ -14,7 +30,7 @@ export const ProjectsComponent = () => {
       </div>
 
       <div className="w-full flex flex-wrap justify-center gap-8 sm:mx-0 md:-mx-10">
-        {projects.map((project: any) => (
+        {projects.map((project: Project) => (
           <CardProject
             key={project.id}
             id={project.id}
@@ -23,7 +39,7 @@ export const ProjectsComponent = () => {
             description={project.description}
             linkGithub={project.linkGithub}
             deploy_url={project.deploy_url}
-            tags={project.tags.map((tag: any) => tag.name)}
+            tags={project.tags.map((tag: Tags) => tag.name)}
           />
         ))}
       </div>

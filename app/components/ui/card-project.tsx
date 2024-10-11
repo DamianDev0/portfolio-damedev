@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Button from "../ui/button.project";
 
 interface CardProjectProps {
   id: number;
-  image: string;
+  image: StaticImageData;
   name: string;
   description: string;
   linkGithub: string;
@@ -11,7 +11,7 @@ interface CardProjectProps {
   tags: string[];
 }
 
-export const CardProject = ({ id, image, name, description, linkGithub, deploy_url, tags }: CardProjectProps) => {
+export const CardProject = ({ image, name, description, linkGithub, deploy_url, tags }: CardProjectProps) => {
   return (
     <div className="w-[370px] h-[560px] bg-black/50 backdrop-blur-3xl backdrop-opacity-80
      rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-8
