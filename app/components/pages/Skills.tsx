@@ -1,7 +1,5 @@
 import { StaticImageData } from "next/image";
 import { technologies } from "../../constants/data"
-import { textVariant } from "../../utils/motion"
-import ScrollAnimation from "../../utils/scroll"
 import { ButtonSkills } from "../ui/tech"
 
 interface Skills {
