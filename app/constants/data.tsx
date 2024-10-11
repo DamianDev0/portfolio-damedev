@@ -1,5 +1,4 @@
 import { Linkedin, Twitter, Github, Instagram } from "lucide-react";
-import computer from '../assets/computer.png'
 import backend from '../assets/backend.png'
 import web from '../assets/web.png'
 import team from '../assets/team.png'

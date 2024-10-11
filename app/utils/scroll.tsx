@@ -1,16 +1,16 @@
 "use client";
 import { motion, useAnimation, Variants } from "framer-motion";
-import { useEffect, ReactNode } from "react";
+import { useEffect, ReactNode, useCallback } from "react";
 
 interface ScrollAnimationProps {
   children: ReactNode;
-  variants?: Variants; // Agregar variants como una propiedad opcional
+  variants?: Variants; 
 }
 
 const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, variants }) => {
   const controls = useAnimation();
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const offset = window.scrollY + window.innerHeight;
     const element = document.querySelector("#scroll-animation");
 
@@ -23,16 +23,15 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, variants })
         controls.start("hidden"); 
       }
     }
-  };
+  }, [controls]); // Solo dependemos de controls
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [controls]);
+  }, [handleScroll]); // Agrega handleScroll aquí
 
   return (
     <motion.div
