@@ -18,8 +18,8 @@ export const OverviewComponent = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 md:mt-10 ml-12 md:ml-36 max-w-screen-xl"> {/* Ajuste de columnas y espaciado */}
         {services.map((service: CardProps) => (
-      
             <Card 
+              key={service.id}
               title={service.title} 
               description={service.description} 
               image={service.image} 

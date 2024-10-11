@@ -18,6 +18,7 @@ export const SkillsComponent = () => {
        sm:gap-6 mx-auto mt-6 md:mt-10 ml-12 md:ml-36 max-w-screen-xl">
         {technologies.map((skill: Skills) => (
             <ButtonSkills 
+             key={skill.id}
               icon={skill.icon}
             />
         ))}
