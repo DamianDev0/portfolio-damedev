@@ -12,8 +12,8 @@ export const ButtonSkills = ({ icon }: ButtonSkillsProps) => {
           <Image
             src={icon}
             alt="Technology icon"
-            width={54}
-            height={54}
+            width={50}
+            height={50}
             className="mt-4 rounded-lg object-cover"
           />
         )}

@@ -1,6 +1,5 @@
-import { Linkedin, Twitter, Github, Instagram } from "lucide-react";
-import backend from '../assets/backend.png'
-import web from '../assets/web.png'
+import { Linkedin, Github, } from "lucide-react";
+import frontend from '../assets/backend.png'
 import team from '../assets/team.png'
 import javascript from '../assets/tech/javascript.png'
 import reactjs from '../assets/tech/reactjs.png'
@@ -14,10 +13,10 @@ import git from '../assets/tech/git.png'
 import figma from '../assets/tech/figma.png'
 import mongodb from '../assets/tech/mongodb.png'
 import vortextream from '../assets/project/vortextream.png'
-import inmuebles from '../assets/project/inmuebles.png'
+import closeToYou from '../assets/project/closetoyou.png'
 import weather from '../assets/project/weather.png'
-
-
+import backend from  '../assets/frontend.png'
+import mobile from '../assets/mobile.png'
 
 
 
@@ -25,22 +24,12 @@ export const socialNetworks = [
     {
         id: 1,
         logo: <Github size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://github.com/DamianDev0",
     },
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 7,
-        logo: <Instagram size={30} strokeWidth={1} />,
-        src: "https://instagram.com", // Cambia esto por tu URL de Instagram
+        src: "https://www.linkedin.com/in/damian-garcia-b0881327a/",
     },
 ];
 
@@ -51,7 +40,7 @@ export const services = [
         id: 1,
         title: "Web Developer",
         description: "Creating responsive and dynamic websites.",
-        image: web,
+        image: frontend,
     },
     {
         id: 2,
@@ -64,6 +53,12 @@ export const services = [
         title: "Team Worker",
         description: "Producing engaging and creative content.",
         image: team,
+    },
+    {
+        id: 4,
+        title: "Mobile Developer",
+        description: "Development of mobile applications in react native",
+        image: mobile,
     },
 ];
 
@@ -90,6 +85,13 @@ export const dataAboutPage = [
         subtitle: "Health Hub",
         description: "As a frontend developer at Health Hub, you'll collaborate on diverse and challenging health-related projects, developing intuitive and accessible user interfaces that improve the healthcare experience. Join a mission-driven team to create impactful digital solutions that enhance patient care and drive innovation in the healthcare industry.",
         date: "Jul 2024",
+    },
+    {
+        id: 4,
+        title: "Frontend Developer",
+        subtitle: "Close to you",
+        description: "Effortlessly manage and organize your contacts with our intuitive mobile app. Designed for seamless usability, it allows users to quickly add, update, and search contacts while ensuring secure and easy access. The app also integrates maps for location-based contact management and real-time weather updates, offering a comprehensive and efficient experience with a clean, modern interface.",
+        date: "Oct 2024",
     },
 
 ]
@@ -163,7 +165,7 @@ export const projects = [
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
@@ -181,16 +183,16 @@ export const projects = [
     },
     {
       id: 2,
-      name: "Properties",
+      name: "Close To You",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Modern Contacts Manager app built with React Native, allowing users to easily store, organize, and search contacts with a clean, intuitive design for a seamless experience.",
       tags: [
         {
-          name: "react",
+          name: "React Native",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "PostgreSQL",
           color: "green-text-gradient",
         },
         {
@@ -198,9 +200,9 @@ export const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: inmuebles,
-      linkGithub: "https://github.com/agogo345/inmuebles-Backend.git",
-      deploy_url: 'https://propertiesapi.netlify.app/'
+      image: closeToYou,
+      linkGithub: "https://github.com/DamianDev0/ContactsReactNative.git",
+      deploy_url: ''
     },
     {
       id: 3,

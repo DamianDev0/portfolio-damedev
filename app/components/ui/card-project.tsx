@@ -13,10 +13,10 @@ interface CardProjectProps {
 
 export const CardProject = ({ image, name, description, linkGithub, deploy_url, tags }: CardProjectProps) => {
   return (
-    <div className="w-[370px] h-[560px] backdrop-blur-3xl bg-black/30 backdrop-opacity-80
+    <div className="w-[330px] h-[580px] backdrop-blur-3xl bg-black/30 backdrop-opacity-80
      rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-8
      hover:shadow-2xl hover:shadow-purple-500 transition-shadow duration-300">
-      <div className="w-full h-[400px] relative">
+      <div className="w-full h-[340px] relative">
         <Image 
           src={image} 
           alt={name} 

@@ -2,13 +2,13 @@ import { dataAboutPage } from "../../constants/data";
 
 export const TimeLineComponent = () => {
     return (
-        <div className="mx-4 sm:mx-12 md:mx-36">
-            <div className="mx-0 md:mx-4 sm:ml-6">
-                <p className="text-white/30 mx-4 sm:mx-12 mb-3 my-10">WHAT I HAVE DONE SO FAR</p>
+        <div className="mx-4 sm:mx-12 mb-20 md:mx-[20px]">
+            <div className="md:mx-4 sm:ml-6 my-[80px]">
+                <p className="text-white/30 mx-4 sm:mx-12">WHAT I HAVE DONE SO FAR</p>
                 <h1 className="text-3xl sm:text-4xl font-bold mx-4 sm:mx-12 text-white mb-6">My Experience</h1>
             </div>
 
-            <div className="flex flex-col justify-center divide-y divide-slate-200">
+            <div className="flex flex-col justify-center divide-y divide-slate-200 mb-10">
                 <div className="w-full max-w-3xl mx-4 sm:mx-10 md:pb-40 md:pt-20">
                     <div className="-my-6">
                         {dataAboutPage.map((data) => (
