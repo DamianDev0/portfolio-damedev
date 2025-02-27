@@ -7,7 +7,7 @@ interface CardProjectProps {
   name: string;
   description: string;
   linkGithub: string;
-  deploy_url: string;
+  deploy_url?: string; 
   tags: string[];
 }
 
@@ -16,6 +16,7 @@ export const CardProject = ({ image, name, description, linkGithub, deploy_url, 
     <div className="w-[330px] h-[580px] backdrop-blur-3xl bg-black/30 backdrop-opacity-80
      rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-8
      hover:shadow-2xl hover:shadow-purple-500 transition-shadow duration-300">
+      
       <div className="w-full h-[340px] relative">
         <Image 
           src={image} 
@@ -24,6 +25,7 @@ export const CardProject = ({ image, name, description, linkGithub, deploy_url, 
           className="object-cover rounded-2xl" 
         />
       </div>
+
       <div className="flex-1">
         <p className="font-extrabold text-2xl mb-2">{name}</p> 
         <p className="text-sm text-gray-400">{description}</p> 
@@ -35,16 +37,12 @@ export const CardProject = ({ image, name, description, linkGithub, deploy_url, 
           ))}
         </div>
       </div>
+
       <div className="mt-4 flex gap-3 justify-around w-full">
-        <Button 
-          title="View Code" 
-          src={linkGithub} 
-        />
-        <Button 
-          title="Deploy" 
-          src={deploy_url}
-        />
+        <Button title="View Code" src={linkGithub} />
+        {deploy_url && <Button title="Deploy" src={deploy_url} />} 
       </div>
+      
     </div>
   );
 };

@@ -28,9 +28,9 @@ export const TimeLineComponent = () => {
                                     <time className="sm:absolute left-0 translate-y-0. inline-flex items-center 
                                     justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 
                                     sm:mb-0 text-white bg-indigo-800 rounded-full">{data.date}</time>
-                                    <div className="text-xl font-bold text-gray-400">{data.subtitle}</div>
+                                    <div className="text-[1rem] font-bold text-gray-400">{data.subtitle}</div>
                                 </div>
-                                <div className="text-slate-400">{data.description}</div>
+                                <p className="text-[0.9rem] text-slate-400 ">{data.description}</p>
                             </div>
                         ))}
                     </div>

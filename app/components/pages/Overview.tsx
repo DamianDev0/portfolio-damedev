@@ -7,7 +7,7 @@ export const OverviewComponent = () => {
       <div className="flex flex-col sm:mx-10 md:mx-20 ml-4 sm:ml-6"> 
         <p className="font-extralight text-white/40 mb-2 sm:mb-3 text-sm sm:text-base">INTRODUCTION</p>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">About me</h2>
-        <p className="w-full sm:w-3/4 md:w-1/2 mt-4 text-sm sm:text-base text-white/70">
+        <p className="w-full sm:w-3/4 md:w-1/2 mt-4 text-[0.7em] sm:text-base text-white/70">
           DamianDev is a creative and passionate full-stack developer with a background
           in web development and graphic design. I specialize in building dynamic
           and engaging websites using modern technologies like React, Node.js,

@@ -1,5 +1,5 @@
 import { Linkedin, Github, } from "lucide-react";
-import frontend from '../assets/backend.png'
+import frontend from '../assets/Saly-19.png'
 import team from '../assets/team.png'
 import javascript from '../assets/tech/javascript.png'
 import reactjs from '../assets/tech/reactjs.png'
@@ -13,10 +13,11 @@ import git from '../assets/tech/git.png'
 import figma from '../assets/tech/figma.png'
 import mongodb from '../assets/tech/mongodb.png'
 import vortextream from '../assets/project/vortextream.png'
-import closeToYou from '../assets/project/closetoyou.png'
+import rhythm from '../assets/project/rhythm.png'
 import weather from '../assets/project/weather.png'
-import backend from  '../assets/frontend.png'
-import mobile from '../assets/mobile.png'
+import backend from  '../assets/Saly-10.png'
+import mobile from '../assets/Saly-12.png'
+import smartCart from '../assets/project/smartCart.png' 
 
 
 
@@ -50,49 +51,50 @@ export const services = [
     },
     {
         id: 3,
-        title: "Team Worker",
-        description: "Producing engaging and creative content.",
-        image: team,
-    },
-    {
-        id: 4,
         title: "Mobile Developer",
         description: "Development of mobile applications in react native",
         image: mobile,
+    },
+    {
+        id: 4,
+        title: "Team Worker",
+        description: "Producing engaging and creative content.",
+        image: team,
     },
 ];
 
 
 
 export const dataAboutPage = [
-    {
-        id: 1,
-        title: "Frontend Developer",
-        subtitle: "Vortextream",
-        description: "Collaborate with a dynamic team to design and develop visually engaging, responsive, and functional user interfaces that drive success for our streaming platform. As a part of Vortextream, you'll work on interfaces for movies, anime, live streams, and more, providing users with seamless and immersive entertainment experiences.",
-        date: "Sep 2024",
-    },
+
     {
         id: 2,
-        title: "Backend Developer",
+        title: "Frontend Developer",
         subtitle: "Vortextream",
-        description: "Work on exciting projects that push the boundaries of creativity and technology in the streaming industry. Join us as we build captivating and scalable backend systems that power movies, anime, and live streams. Help shape the future of digital entertainment by creating solutions that inspire and engage our users worldwide.",
+        description: "Develop a robust and scalable REST API for a book management system using NestJS, MongoDB, and Docker. Work with a dynamic team to design efficient database structures, implement secure authentication, and ensure high performance. You'll also write comprehensive tests to maintain code reliability and scalability",
         date: "Sep 2024",
     },
     {
         id: 3,
-        title: "Frontend Developer",
-        subtitle: "Health Hub",
-        description: "As a frontend developer at Health Hub, you'll collaborate on diverse and challenging health-related projects, developing intuitive and accessible user interfaces that improve the healthcare experience. Join a mission-driven team to create impactful digital solutions that enhance patient care and drive innovation in the healthcare industry.",
-        date: "Jul 2024",
+        title: "Backend Developer",
+        subtitle: "Rest-Api library",
+        description: "Work on exciting projects that push the boundaries of creativity and technology in the streaming industry. Join us as we build captivating and scalable backend systems that power movies, anime, and live streams. Help shape the future of digital entertainment by creating solutions that inspire and engage our users worldwide.",
+        date: "Oct 2024",
     },
     {
         id: 4,
-        title: "Frontend Developer",
-        subtitle: "Close to you",
-        description: "Effortlessly manage and organize your contacts with our intuitive mobile app. Designed for seamless usability, it allows users to quickly add, update, and search contacts while ensuring secure and easy access. The app also integrates maps for location-based contact management and real-time weather updates, offering a comprehensive and efficient experience with a clean, modern interface.",
-        date: "Oct 2024",
+        title: "React native Developer",
+        subtitle: "SmartCart",
+        description: "SmartCart is an AI-powered shopping management app designed to simplify and enhance your purchasing experience. It automatically sorts your items into categories, making your shopping lists organized and easy to manage. Additionally, SmartCart provides personalized recommendations based on your preferences and past purchases, helping you save time and discover new products you'll love.",
+        date: "Dec 2024",
     },
+    {
+      id: 5,
+      title: "React native Developer",
+      subtitle: "Rhythm",
+      description: "Rhythm is healthy habit management app designed to help you build and maintain positive routines. It allows you to track your streaks, set challenges, and view detailed statistics on your progress. With Rhythm, you can save your habits on your device, load them whenever needed, and receive personalized notifications to keep you motivated",
+      date: "Jan 2025",
+  },
 
 ]
 
@@ -183,16 +185,16 @@ export const projects = [
     },
     {
       id: 2,
-      name: "Close To You",
+      name: "Rhythm",
       description:
-        "Modern Contacts Manager app built with React Native, allowing users to easily store, organize, and search contacts with a clean, intuitive design for a seamless experience.",
+        "Rhythm is healthy habit management app designed to help you build and maintain positive routines. It allows you to track your streaks, set challenges, and view detailed statistics on your progress.",
       tags: [
         {
           name: "React Native",
           color: "blue-text-gradient",
         },
         {
-          name: "PostgreSQL",
+          name: "Sql Lite storage",
           color: "green-text-gradient",
         },
         {
@@ -200,12 +202,32 @@ export const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: closeToYou,
-      linkGithub: "https://github.com/DamianDev0/ContactsReactNative.git",
+      image: rhythm,
+      linkGithub: "https://github.com/DamianDev0/rhythm",
       deploy_url: ''
     },
     {
       id: 3,
+      name: "Smart Cart",
+      description:
+        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      tags: [
+        {
+          name: "Css",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+      ],
+      image: smartCart,
+      linkGithub: "https://github.com/DamianDev0/SmartCart",
+      deploy_url: ''
+
+    },
+    {
+      id: 4,
       name: "Weather",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
